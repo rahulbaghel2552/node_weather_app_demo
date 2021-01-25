@@ -4,8 +4,7 @@ const submitBtn = document.getElementById("submitBtn");
 const city_name = document.getElementById("city_name");
 const tem = document.getElementById("temp");
 const tem_status = document.getElementById("status");
-const datahide= document.querySelector(".middle_layer");
-
+const datahide = document.querySelector(".middle_layer");
 
 const getinfo = async (event) => {
   event.preventDefault();
@@ -15,8 +14,7 @@ const getinfo = async (event) => {
   if (citVal === "") {
     city_name.innerHTML = `please write the city name`;
 
-    datahide.classList.add('datahide');
-
+    datahide.classList.add("datahide");
   } else {
     try {
       let url = `http://api.openweathermap.org/data/2.5/weather?q=${citVal}&units=matric&appid=b7dbffc6d5fa7fcaf2cf6251b86d820d`;
@@ -42,10 +40,10 @@ const getinfo = async (event) => {
         tem_status.innerHTML =
           "<i class='fas fa-sun' style='color:#eccc68'></i>";
       }
-      datahide.classList.remove('data_hide');
+      datahide.classList.remove("data_hide");
     } catch {
       city_name.innerHTML = `please enter the city name properly`;
-      datahide.classList.add('data_hide');
+      datahide.classList.add("data_hide");
     }
   }
 };

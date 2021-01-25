@@ -170,9 +170,9 @@ sup {
   font-size: 3rem;
   margin-top: -2rem;
 }
-.data_hide{
+.data_hide {
   visibility: hidden;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .temp_form {
@@ -198,7 +198,7 @@ sup {
   top: 5px;
   right: 5px;
   bottom: 5px;
-  border: none; 
+  border: none;
   background-color: #009ad8;
   padding: 0 3rem;
   border-radius: 3rem;
@@ -220,7 +220,8 @@ sup {
     height: auto;
     margin: 3rem 0;
   }
-  .temp_form,.temInformation  {
-    width:auto;
+  .temp_form,
+  .temInformation {
+    width: auto;
   }
 }
